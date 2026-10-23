@@ -1,0 +1,84 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background: #f4f6f8;
+  color: #222;
+}
+
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, textarea, button {
+  font: inherit;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+li {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.75rem;
+  overflow-wrap: anywhere; 
+}
+
+li h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+li p {
+  margin: 0 0 0.5rem;
+}
+
+li button {
+  width: auto;
+}
+
+.error {
+  color: #b3261e;
+}
+
+@media (min-width: 600px) {
+  ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  form button {
+    width: auto;
+    align-self: flex-start;
+  }
+}
+
