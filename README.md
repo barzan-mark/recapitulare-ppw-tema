@@ -1,6 +1,6 @@
 # Temă recapitulare – mini frontend
 
-Proiect mic frontend (`index.html`, `style.css`, `app.js`) pentru un REST API, realizat cu ajutorul AI, specific Claude (adăugat în .gitignore).
+Proiect mic frontend (`index.html`, `style.css`, `app.js`) pentru un REST API, realizat cu ajutorul AI, specific Claude (adăugat în .gitignore, și vizibil drept folder .claude/).
 
 - **API:** https://jsonplaceholder.typicode.com/posts (fake API, POST/DELETE sunt acceptate, dar nu salvate).
 - **Live link:** https://github.com/barzan-mark/recapitulare-ppw-tema
