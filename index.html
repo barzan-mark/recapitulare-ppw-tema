@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temă recapitulare</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Postări</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Postare nouă</h2>
+      <form id="post-form">
+        <label for="title">Titlu</label>
+        <input id="title" name="title" type="text" required minlength="3">
+
+        <label for="body">Text</label>
+        <textarea id="body" name="body" rows="4" required></textarea>
+
+        <label for="userId">Număr utilizator (1-10)</label>
+        <input id="userId" name="userId" type="number" min="1" max="10" value="1" required>
+
+        <button type="submit">Adaugă postare</button>
+        <p id="form-message" role="alert"></p>
+      </form>
+    </section>
+
+    <section>
+      <h2>Toate postările</h2>
+      <p id="list-status" role="status">Se încarcă...</p>
+      <ul id="post-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Date din JSONPlaceholder..</p>
+  </footer>
+</body>
+</html>
